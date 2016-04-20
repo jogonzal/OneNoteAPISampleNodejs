@@ -2,6 +2,7 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
+var http = require('http');
 
 var routes = require('./routes/index');
 var callback = require('./routes/callback');
@@ -38,4 +39,8 @@ app.use(function (err, req, res, next) {
     });
 });
 
-module.exports = app;
+// Run
+app.set('port', process.env.PORT || 3000);
+http.createServer(app).listen(app.get('port'), function () {
+	console.log("Express server listening on port " + app.get('port'));
+});
