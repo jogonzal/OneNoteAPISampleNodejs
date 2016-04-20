@@ -18,6 +18,8 @@
   <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
   <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
   <ItemGroup>
+    <Content Include=".bowerrc" />
+    <Content Include="bower.json" />
     <Content Include="image.jpg" />
     <Content Include="package.json" />
     <Content Include="README.md" />

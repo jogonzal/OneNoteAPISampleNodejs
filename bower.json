@@ -1,0 +1,23 @@
+{
+  "name": "OneNote API sample",
+  "description": "App to demonstrate usage of OneNote API",
+  "main": "app.js",
+  "authors": [
+    ""
+  ],
+  "license": "No",
+  "homepage": "",
+  "moduleType": [],
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "public/components/"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.6"
+  }
+}
